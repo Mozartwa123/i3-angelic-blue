@@ -16,7 +16,7 @@ It isn't a user friendly configuration. There is no bar by default. Everything i
 
 1. i3
 2. rofi
-3. jq (for parsing i3-msg -t get_workspaces input)
+3. jq (for parsing i3-msg -t get_workspaces output)
 4. awk (or gawk)
 5. picom
 6. nm-connection-editor
