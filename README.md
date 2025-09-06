@@ -79,4 +79,11 @@ I promise, I make it more precise. Please see all the config files, and read com
 
 If you really need a polish translation (because I am polish) of this file, write me on github issue. I will write it easily.
 
+
+## Important external links
+
++ i3 dokumentation: https://i3wm.org/docs/
++ picom dokumentation: https://github.com/yshui/picom/tree/next/man (+ man pages)
++ rofi dokumentation: https://davatorium.github.io/rofi/current/rofi.1/
++ video about i3-angelic-blue: https://youtu.be/B8aF2q7R3-0?si=Z2K3_cwFB7rBrcPr
 # Enjoy:-D
