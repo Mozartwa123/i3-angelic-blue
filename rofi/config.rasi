@@ -1,0 +1,52 @@
+window {
+    border-color: rgba ( 0, 142, 233, 100 % );
+    background-color: rgba ( 0, 223, 188, 70 % );
+    location: north;       
+    y-offset: 10;          
+    x-offset: 0;           
+    width: 99%;           
+    border-radius: 2em;
+    border: 0.1em;
+}
+
+* {
+	font: "Cantarell Bold Italic 8";
+        /*
+             Type fc-list in the terminal. The typical output is /usr/font/path fontname style:style1, style2, ..., stylen. Then
+             you must type font: fontname style1 style2 ... stylen fontsize.
+        */
+}
+
+entry {
+    placeholder: "Type here";
+    border: none;
+}
+
+configuration {
+        icon-theme: "Zafiro-Nord-Black-Blue"; // you must give precisely the icon-theme directory name in .icon directory. Unless Adwaita theme will be used
+	show-icons: true;
+	icon-size: 5;
+}
+
+listview {
+        scrollbar: false; // scrollbar is disabled
+	lines: 1;
+	border: none;
+}
+
+element {
+    padding: 0.35em;         
+    margin: 0.2em;
+}
+
+element.selected.normal {
+    background-color: rgba ( 0, 142, 233, 50 % );
+    text-color:       rgba ( 0, 0, 233, 100 % );
+    border-radius: 1em;
+}
+
+/*
+     If you want to change properties of selected element, edit tag element.selected.normal, to the all rest you are supposed
+     to edit element.alternate.normal and element.normal.normal. I am mentioning it because it makes me frustrated
+*/
+

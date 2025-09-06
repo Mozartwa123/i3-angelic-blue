@@ -1,0 +1,66 @@
+window {
+    border-color: rgba ( 0, 142, 233, 100 % );
+    background: transparent;
+    background-color: rgba ( 0, 223, 188, 70 % );
+    location: 8;       // center of the screen
+    y-offset: 10;          
+    x-offset: 0;           
+    width: 50%;           
+    border-radius: 2em;   
+    border: 0.1em;
+    height: 35%;
+    spacing: -7em; // I have some problems with too much break between textbox and listwiev so I made negative spacing
+    // Increase it in case of textbox and listview being to close each other
+    children: [ textbox, listview ];
+}
+
+listview {
+        border: none;
+        scrollbar: false;
+        orientation: horizontal;
+	lines: 2;
+        columns: 2;
+}
+
+element {
+   vertical-align: 0;
+    margin: 0em 1em 0.1em 1em;
+    padding: 1em;
+}
+
+element.selected.normal {
+    background-color: rgba ( 120, 33, 233, 70 % );
+    text-color:  rgba ( 120, 250, 120, 50 % );
+    border-radius: 1em;
+}
+
+element.normal.normal, element.alternate.normal { // see: config.rasi to explain this weird tags
+background-color: rgba ( 0, 142, 233, 50 % );
+    text-color:       rgba ( 0, 0, 233, 100 % );
+    border-radius: 1em;
+}
+
+element-text {
+    	font: "Cantarell Bold Italic 10";
+    horizontal-align: 0.5;
+//    vertical-align: 0.5;
+}
+
+
+
+textbox {
+//    background-color: #001122;
+//    margin: 0em 0em -4em 0em;
+//    padding: 0em 0em -1em 0em;
+    border: none;
+    padding: none;
+    font: "Cantarell Bold Italic 14";
+    horizontal-align: 0.5;
+    content: "You pressed the exit shortcut. What do you want to do?";
+}
+
+inputbar {
+    enabled: false;
+}
+
+

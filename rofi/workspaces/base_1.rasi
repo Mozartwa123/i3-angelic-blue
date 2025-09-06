@@ -1,0 +1,59 @@
+window {
+     y-offset: 1em;
+     location: north;
+     width: 20%;
+     height: 25%;
+     background-color: #00332233;
+     border-radius: 1em;
+     children: [ container, listview ];
+}
+
+container {
+    orientation: horizontal;
+    children: [ break, textbox-stop-nieusuwalnej-dziurze, break ];
+}
+
+break {
+    padding: 0.1em;
+}
+
+textbox-stop-nieusuwalnej-dziurze { // on english: textbox-no-undeleted-hole :)
+    font: "DejaVu Serif Condensed Bold 24";
+    text-color: #009988;
+    padding: 1.2em 1em 0em 1em;
+    border-radius: 1.2em;
+    background-color: #00666666;
+    horizontal-align: 0.5;
+    content: '2';
+}
+
+listview {
+     scrollbar: false;
+    border: none;
+   padding: 0 1em 0 1em;
+    lines: 2;
+    columns: 5;
+}
+
+element {
+   vertical-align: 0;
+    margin: 0.1em 0.1em 0.1em 0.1em;
+    padding: 0.4em;
+}
+
+element.selected.normal {
+    background-color: rgba ( 120, 33, 233, 70 % );
+    text-color:  rgba ( 120, 250, 120, 50 % );
+    border-radius: 2em;
+}
+
+element.normal.normal, element.alternate.normal {
+background-color: rgba ( 0, 142, 233, 50 % );
+    text-color:       rgba ( 0, 0, 233, 100 % );
+    border-radius: 2em;
+}
+
+element-text {
+    font: "Cantarell Bold 12";
+    horizontal-align: 0.5;
+}
