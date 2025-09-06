@@ -39,6 +39,8 @@ Note: I never remember all needed pipewire packages...
 ## Install
 
 No access to root is needed, so it is quite safe project. Simply move all directories in this project (rofi, i3, picom) to .config directory, for example you can open repo directory in terminal and run:
+    
+    for i in i3/ picom/ rofi/ rofi/ rofi/workspaces/; do for j in $( ls $i | grep .sh ) ; do chmod +x $i$j; done; done
 
     for i in rofi picom i3; do mv $i ~/.config; done
 
